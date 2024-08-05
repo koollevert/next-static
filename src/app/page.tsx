@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from 'next/link';
-import homeImg from 'public/home.jpg';
+
+import home from '/next.svg';
 
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
       Home page
       <div className="absolute -z-10 inset-0">
         <Image
-          src={homeImg}
+          src={'/home.jpg'}
           alt="two factory mates and a car"
           fill
           style={{objectFit: 'cover'}}
