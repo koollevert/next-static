@@ -1,21 +1,11 @@
-import Image from "next/image";
-
-import home from '/next.svg';
+import Hero from '@/components/hero';
+import home from '/home.svg';
 
 
 export default function Home() {
   return (
-    <div>
-      Home page
-      <div className="absolute -z-10 inset-0">
-        <Image
-          src={'/home.jpg'}
-          alt="two factory mates and a car"
-          fill
-          style={{objectFit: 'cover'}}
-        />
-      </div>
-    </div>
+    <Hero imgData={"/home.jpg"} imgAlt="two men a car" title="Profesional home cleaner"/>
+   
     
   );
 }
